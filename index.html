@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>네이버 스마트 에디터 적용하기</title>
+    <style>
+        .smartEditor {
+            width: 660px;
+            height: 500px
+        }
+        .hideDiv {
+            display: none;
+        }
+        #blogContents > li {
+            list-style: none;
+            border-bottom: 1px solid black;
+        }
+    </style>
+    <script type="text/javascript" src="naverEditor/js/HuskyEZCreator.js" charset="utf-8"></script>
+</head>
+<body>
+<button onclick="showBlogEditor()">네이버 에디터</button>
+<button onclick="showBlogList()">블로그 리스트</button>
+<div id="writeBlog">
+    <textarea name="ir1" id="ir1" class="smartEditor"></textarea>
+    <input type="submit" value="등록" onclick="submitContents()"/>
+</div>
+<div class="hideDiv" id="blogList">
+    <ul id="blogContents">
+    </ul>
+</div>
+</body>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/content_DB.js"></script>
+<script src="js/script.js"></script>
+</html>
