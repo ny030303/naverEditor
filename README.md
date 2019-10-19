@@ -1,5 +1,7 @@
 # naverEditor
 
+### database "blog"를 만듦
+
 xampp - httpd.conf 설정
 ~~~
 ...
